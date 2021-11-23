@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 360 780" style="enable-background:new 0 0 360 780;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F4F8FE;}
+	.st1{fill:#0E329C;}
+	.st2{fill:url(#Intersection_12_1_);}
+	.st3{opacity:0.3;fill:#F4F8FE;enable-background:new    ;}
+	.st4{fill:#041280;}
+	.st5{fill:url(#Intersection_11_1_);}
+</style>
+<g id="Group_1" transform="translate(0.056 0.322)">
+	<g id="FOLD_1_" transform="translate(-0.056 -0.322)">
+		<path id="Light_Bg" class="st0" d="M0.1,746.9L84.2,780L360,748.5V780H0.1V746.9z"/>
+		<path id="Right_design" class="st1" d="M302.9,753.4l57,20.5v-27.1L302.9,753.4z"/>
+		
+			<linearGradient id="Intersection_12_1_" gradientUnits="userSpaceOnUse" x1="30.319" y1="429.4802" x2="30.505" y2="430.4112" gradientTransform="matrix(359.96 0 0 -780 -10768.8008 335750)">
+			<stop  offset="0" style="stop-color:#0C29A3"/>
+			<stop  offset="1" style="stop-color:#2C7EEB"/>
+		</linearGradient>
+		<path id="Intersection_12" class="st2" d="M0,0l359.9,0.1l0,748.1L84.7,780L0,747.1L0,0z"/>
+		<g id="top-1" transform="translate(310.263 15.322)">
+			<circle id="Ellipse_2" class="st3" cx="9.1" cy="16.5" r="1.7"/>
+			<circle id="Ellipse_3" class="st3" cx="9.1" cy="9.1" r="1.7"/>
+			<circle id="Ellipse_4" class="st3" cx="9.1" cy="1.7" r="1.7"/>
+			<circle id="Ellipse_6" class="st3" cx="23.9" cy="16.5" r="1.7"/>
+			<circle id="Ellipse_7" class="st3" cx="23.9" cy="9.1" r="1.7"/>
+			<circle id="Ellipse_8" class="st3" cx="23.9" cy="1.7" r="1.7"/>
+			<circle id="Ellipse_10" class="st3" cx="1.7" cy="16.5" r="1.7"/>
+			<circle id="Ellipse_11" class="st3" cx="1.7" cy="9.1" r="1.7"/>
+			<path id="Path_1" class="st3" d="M1.7,0c1,0,1.7,0.8,1.7,1.7S2.7,3.5,1.7,3.5S0,2.7,0,1.7C0,0.8,0.8,0,1.7,0C1.7,0,1.7,0,1.7,0z"
+				/>
+			<circle id="Ellipse_14" class="st3" cx="16.5" cy="16.5" r="1.7"/>
+			<circle id="Ellipse_15" class="st3" cx="16.5" cy="9.1" r="1.7"/>
+			<circle id="Ellipse_16" class="st3" cx="16.5" cy="1.7" r="1.7"/>
+		</g>
+		<path id="Left_Design" class="st4" d="M251,0.3L84.7,780L0.1,688.6V0.3H251z"/>
+		
+			<linearGradient id="Intersection_11_1_" gradientUnits="userSpaceOnUse" x1="30.516" y1="430.8499" x2="30.225" y2="430.2739" gradientTransform="matrix(358.88 0 0 -317.463 -10735.8438 137321.625)">
+			<stop  offset="0" style="stop-color:#4191DF"/>
+			<stop  offset="0.507" style="stop-color:#2A49C1"/>
+			<stop  offset="1" style="stop-color:#0A249F;stop-opacity:0"/>
+		</linearGradient>
+		<path id="Intersection_11" class="st5" d="M0.6,691.9V462.5l358.9,137.8v147.8L79.8,780L0.6,691.9z"/>
+		<g id="btm-1" transform="translate(98.021 752.031)">
+			<circle id="Ellipse_2-2" class="st3" cx="7.9" cy="14.3" r="1.5"/>
+			<circle id="Ellipse_3-2" class="st3" cx="7.9" cy="7.9" r="1.5"/>
+			<circle id="Ellipse_4-2" class="st3" cx="7.9" cy="1.5" r="1.5"/>
+			<circle id="Ellipse_6-2" class="st3" cx="20.7" cy="14.3" r="1.5"/>
+			<circle id="Ellipse_7-2" class="st3" cx="20.7" cy="7.9" r="1.5"/>
+			<circle id="Ellipse_8-2" class="st3" cx="20.7" cy="1.5" r="1.5"/>
+			<circle id="Ellipse_10-2" class="st3" cx="1.5" cy="14.3" r="1.5"/>
+			<circle id="Ellipse_11-2" class="st3" cx="1.5" cy="7.9" r="1.5"/>
+			<path id="Path_1-2" class="st3" d="M1.5,0C2.3,0,3,0.7,3,1.5S2.3,3,1.5,3S0,2.3,0,1.5S0.7,0,1.5,0z"/>
+			<circle id="Ellipse_14-2" class="st3" cx="14.3" cy="14.3" r="1.5"/>
+			<circle id="Ellipse_15-2" class="st3" cx="14.3" cy="7.9" r="1.5"/>
+			<circle id="Ellipse_16-2" class="st3" cx="14.3" cy="1.5" r="1.5"/>
+		</g>
+	</g>
+</g>
+</svg>
