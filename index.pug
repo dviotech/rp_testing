@@ -1,216 +1,256 @@
-
 '------'
 title: Create Custom Branded UPI/Bharat QR code with Razorpay MultiQR
 description: Unlimited UPI/Bharat QR codes for merchants. Put your Business Name, Logo on QR codes. Accept digital payments from customers using UPI apps, wallets, cards directly.
 ---
-extends /templates/base
-append vars
-  - pageid = 'education'
-  - _class = 'signupcard'
-  - hasTopbar = false
-  - signup_link = 'https://dashboard.razorpay.com/signup'
-  append head
-    link(rel='stylesheet' href='/styles/qr-code.css')
-//Institutions Section Start
-section#institution.container-fluid.sec4
+section#home.section-css
+  .bannerSec
+    .container
+      .BannerLeft
+        h1#bannerleft-h1.h1 Payments for your Education business. As easy as 1-2-3!
+        p#bannerleft-p Set up &amp; track your online fee payments with ease
+      .BannerRight
+        img.banner-man.img-fluid(src='fold-1/man-banner.svg' alt='Banner Man')
+        img.bannerWomen.img-fluid(src='fold-1/girl.png' alt='Banner Women')
+        .formMain
+          img#form-widget.img-fluid(src='fold-1/widget.png' alt='Widget')
+.container-fluid.sec2
+  p#trusted-p Trusted by leading Education &amp; Edtech brands
+  .slick.marquee
+    .slick-slide
+      .inner
+       img.lazy(data-src="fold-1/spark-studio.png", width='149' height='87' alt='Spark Studio')
+    .slick-slide
+      .inner
+       img.lazy(data-src='fold-1/girl-script.png' width='149' height='87' alt='Girl Script')
+    .slick-slide
+      .inner
+        img.lazy(data-src='fold-1/simplilearn.png' width='149' height='87' alt='Simpli Learn')
+    .slick-slide
+      .inner
+        img.lazy(data-src='fold-1/shirpur.png' width='149' height='87' alt='Shirpur')
+    .slick-slide
+      .inner
+        img.lazy(data-src='fold-1/toppr.png' width='149' height='87' alt='Toppr')
+    .slick-slide
+      .inner
+        img.lazy(data-src='fold-1/niit.png' width='149' height='87' alt='NIIT')
+    .slick-slide
+      .inner
+        img.lazy(data-src='fold-1/udacity.png' width='149' height='87' alt='Udacity')
+    .slick-slide
+      .inner
+        img.lazy(data-src='fold-1/gonka.png' width='149' height='87' alt='Gonka')
+    .slick-slide
+      .inner
+        img.lazy(data-src='fold-1/unacademy.png' width='149' height='87' alt='Unacademy')
+    .slick-slide
+      .inner
+        img.lazy(data-src='fold-1/edureka.png' width='149' height='87' alt='Edureka')
+    .slick-slide
+      .inner
+        img.lazy(data-src='fold-1/codechef.png' width='149' height='87' alt='Codechef')
+.container-fluid.sec3
+  p#sec3-p Choose the perfect solution for your business type
+  .container
+    .buttons
+      a.anchor(href='#institution') Educational Institutions
+    .buttons
+      a.anchor(href='#online-course') Online Courses
+    .buttons
+      a.anchor(href='#freelance') Freelance coaches &amp; tutors 
+#institution.container-fluid.sec4
   .custom-shape-divider-top-1632475320
-     svg( data-name="Layer 1", xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1200 120", preserveaspectratio="none" ) path.shape-fill(d="M1200 120L0 16.48 0 0 1200 0 1200 120z")
+    svg(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1200 120' preserveaspectratio='none') path.shape-fill(d='M1200 120L0 16.48 0 0 1200 0 1200 120z')
   .container
     .Sec4TopLeft
-      h1 INSTITUTIONS
-      p
-        | Collect fees for your school, college or
+      h1#sec3-institution-h1.h1 INSTITUTIONS
+      p#sec3-institution-p
+        | Collect fees for your school, college or 
         br
-        |
-        | coaching class with or without a website
+        |  coaching class with or without a website
     .Sec4TopRight
-       img.lazy(data-src="/assets/education/institute.svg", alt="institute")
+      img#institution-img(src='fold-1/institute.svg' alt='Institutions Image Right')
   .container
     .box1.institution
-      img.lazy(data-src="/assets/education/payment-button.svg", alt="payment-button")
-      h2 Payment Links
-      ul
+      img.payments-img(src='fold-1/payment-button.svg' alt='Payments Links')
+      h2.institution-box-h1 Payment Links
+      ul.institution-ul-list
         li Share links via Whatsapp, FB, Instagram
         li Set automated reminders for collecting fees
-      a(href="#home") SIGN UP NOW
+      a.sign-up-btn(href='#home') SIGN UP NOW
     .box1.institution
-      img.lazy(data-src="/assets/education/ic1.jpg", alt="institution-icon-one")
-      h2 Smart Collect
-      ul
+      img.payments-img(src='fold-1/ic1.jpg' alt='Smart Collect')
+      h2.institution-box-h1 Smart Collect
+      ul.institution-ul-list
         li Create multiple free virtual accounts with Smart Collect
         li Customise Convenience Fee bearer
-      a(href="#home") SIGN UP NOW
+      a.sign-up-btn(href='#home') SIGN UP NOW
     .box1.institution
-      img.lazy(data-src="/assets/education/ic1.jpg", alt="institution-icon-two")
-      h2 Route
-      ul
+      img.payments-img(src='fold-1/ic1.jpg' alt='Route')
+      h2.institution-box-h1 Route
+      ul.institution-ul-list
         li Automatically split &amp; transfer incoming payments to various internal accounts
-      a(href="#home") SIGN UP NOW
+      a.sign-up-btn(href='#home') SIGN UP NOW
   p.botText
-    | Transparent pricing that works for your business. No set up or maintenance fee.
-    a(href="#", target="_blank") Know More
+    | Transparent pricing that works for your business. No set up or maintenance fee. 
+    a(href='#' target='_blank') Know More
   .custom-shape-divider-bottom-1632475645
-    svg( data-name="Layer 1", xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1200 120", preserveaspectratio="none" ) path.shape-fill(d="M1200 120L0 16.48 0 0 1200 0 1200 120z")
-//Institutions Section End
-//Online Courses Section Start
+    svg(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1200 120' preserveaspectratio='none')
+      path.shape-fill(d='M1200 120L0 16.48 0 0 1200 0 1200 120z')
 section#online-course
   .container-fluid.sec4.bluebg
     .container
       .Sec4TopRight1
-        img.lazy(data-src="/assets/education/online.svg", alt="online-img")
+        img#online-course-img(src='fold-1/online.svg' alt='Online Courses Top Header')
       .Sec4TopLeft1
-        h1 ONLINE COURSES
+        h1#online-course-h1.h1 ONLINE COURSES
         p
           | Join the top Edtech companies in accepting fees for your courses. Go live in a day.
     .container
       .box1.onlinecourses
-        img.lazy(data-src="/assets/education/payment-button.svg", alt="payment-buttontwo")
-        h2 Payment Buttons
-        ul
+        img.payments-img(src='fold-1/payment-button.svg' alt='Payments Buttons')
+        h2.institution-box-h1 Payment Buttons
+        ul.institution-ul-list
           li Add payment button to an existing website in under 5 mins
           li Set up one-time &amp; recurring fee payments
           li 100+ payment modes, including EMI &amp; PayLater
-        a(href="#home") SIGN UP NOW
+        a.sign-up-btn(href='#home') SIGN UP NOW
       .box1.onlinecourses
-       img.lazy(data-src="/assets/education/payment-link.svg", alt="payment-link")
-        h2 Payment Links
-        ul
+        img.payments-img(src='fold-1/payment-link.svg' alt='Payments Links')
+        h2.institution-box-h1 Payment Links
+        ul.institution-ul-list
           li Share links via Whatsapp, FB, Instagram
           li Let students pay in language of their choice
           li Set automated reminders for collecting fees
-        a(href="#home") SIGN UP NOW
+        a.sign-up-btn(href='#home') SIGN UP NOW
       .box1.onlinecourses
-        img.lazy(data-src="/assets/education/payment-gatway.svg", alt="payment-gatway-three")
-        h2 Payment Gateway
-        ul
+        img.payments-img(src='fold-1/payment-gatway.svg' alt='Payments Gateway')
+        h2.institution-box-h1 Payment Gateway
+        ul.institution-ul-list
           li Developer friendly integration with any website/ app
           li 100+ payment modes including EMI and PayLater
-        a(href="#home") SIGN UP NOW
+        a.sign-up-btn(href='#home') SIGN UP NOW
     p.botText
-      | Transparent pricing : 2% fee per transaction (excel. GST). No setup &amp; maintenance feel!
-      a(href="#", target="_blank") Know More
-//Online Courses Section End
-//Freelance Coaches Section Start
-section#freelance.container-fluid.sec4
+      | Transparent pricing : 2% fee per transaction (excel. GST). No setup &amp; maintenance feel! 
+      a(href='#' target='_blank') Know More
+#freelance.container-fluid.sec4
   .custom-shape-divider-top-1632475320
-    svg(data-name="Layer 1", xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1200 120", preserveaspectratio="none" ) path.shape-fill(d="M1200 120L0 16.48 0 0 1200 0 1200 120z")
+    svg(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1200 120' preserveaspectratio='none')
+      path.shape-fill(d='M1200 120L0 16.48 0 0 1200 0 1200 120z')
   .container
     .Sec4TopLeft
-      h1 FREELANCE COACHES &amp; TUTORS
-      p
-        | No website or technical knowledge needed,
+      h1.h1 FREELANCE COACHES &amp; TUTORS
+      p#freelance-para
+        | No website or technical knowledge needed, 
         br
-        |
-        | get started in 30 minutes.
+        |  get started in 30 minutes.
     .Sec4TopRight
-      img.lazy(data-src="/assets/education/freelance.svg", alt="freelance")
+      img#freelance-img-header(src='fold-1/freelance.svg' alt='Freelance Header Image')
   .container
     .box1.freelanceCouches
-      img.lazy(data-src="/assets/education/payment-page.svg", alt="payment-page")
-      h2 Payment Pages
-      ul
+      img.payments-img(src='fold-1/payment-page.svg' alt='Payments Pages')
+      h2.institution-box-h1 Payment Pages
+      ul.institution-ul-list
         li Easily collect fees without a website
         li Ready to use, customizable templates
         li 100+ payment modes including EMI &amp; PayLater options
-      a(href="#home") SIGN UP NOW
+      a.sign-up-btn(href='#home') SIGN UP NOW
     .box1.freelanceCouches
-      img.lazy(data-src="/assets/education/payment-link.svg", alt="payment-link")
-      h2 Payment Links
-      ul
+      img.payments-img(src='fold-1/payment-link.svg' alt='Payments Links')
+      h2.institution-box-h1 Payment Links
+      ul.institution-ul-list
         li Share links via Whatsapp, FB, Instagram
         li Share links via Whatsapp, FB, Instagram instantly
         li Let students pay in language of their choice
-      a(href="#home") SIGN UP NOW
+      a.sign-up-btn(href='#home') SIGN UP NOW
     .box1.freelanceCouches
-      img.lazy(data-src="/assets/education/payment-button.svg", alt="payment-button-four")
-      h2 Payment Buttons
-      ul
+      img.payments-img(src='fold-1/payment-button.svg' alt='Payments Buttons')
+      h2.institution-box-h1 Payment Buttons
+      ul.institution-ul-list
         li Add payment button to an existing website in under 5 mins
         li Set up one-time &amp; recurring fee payments
         li 100+ payment modes, including EMI &amp; PayLater
-      a(href="#home") SIGN UP NOW
+      a.sign-up-btn(href='#home') SIGN UP NOW
   p.botText
-    | Transparent pricing : 2% fee per transaction (excel. GST). No setup &amp; maintenance feel!
-    a(href="#", target="_blank") Know More
+    | Transparent pricing : 2% fee per transaction (excel. GST). No setup &amp; maintenance feel! 
+    a(href='#' target='_blank') Know More
   .custom-shape-divider-bottom-1632476021
-    svg( data-name="Layer 1", xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1200 120", preserveaspectratio="none" ) path.shape-fill(d="M1200 120L0 16.48 0 0 1200 0 1200 120z")
-//Freelance Coaches Section End
-//Testimonial Section Start
+    svg(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1200 120' preserveaspectratio='none')
+      path.shape-fill(d='M1200 120L0 16.48 0 0 1200 0 1200 120z')
 section#testimonial
   .container.nomob
     .Sec4TopLeft
-      img.testi-main-img
-      img.lazy(data-src="/assets/education/testimonial.svg", alt="testimonial")
+      img.testi-main-img(src='fold-1/testimonial.svg' alt='Testimonial Header Image')
     .Sec4TopRight
-      h1
-        | Education BUSINESSES
+      h1.h1
+        | Education BUSINESSES 
         br
         | That Love Razorpay
   .container.mob
     .Sec4TopLeft
-      h1
-        | Education Bussinesses
+      h1.h1
+        | Education Bussinesses 
         br
         | That Love Razorpay
     .Sec4TopRight
-      img.lazy(data-src="/assets/education/testimonial.svg", alt="testimonial-one")
+      img.lazy(data-src='fold-1/testimonial.svg' alt='Testimonial Image')
   .container.sec4.testimonial-content
-    h1.text-uppercase.text-right
+    h1.text-uppercase.text-right.h1
     .carousel-controls.testimonial-carousel-controls
       .testimonial-carousel
         .one-slide
           .testimonial.testi1
             .message
               .testi-img
-                img.lazy(data-src="/assets/education/testi-one.png", alt="testimonial-two")
+                img.lazy(data-src='fold-1/testi-one.png' alt="Testimonila One")
               .testi-msg
                 p.msg
                   | Creating No Cost EMI offers through the Razorpay dashboard was surprisingly easy. We saw ~3x increase of the EMI contribution in the overall sales.
                 ul
                   li
-                    h5 Shubham Kumar
+                    h5.h5 Shubham Kumar
                     p Product Manager
                   li.testi-logo
-                    img.lazy(data-src="/assets/education/unacademy-logo.jpg", alt="unacademy-logo")
+                    img.lazy(data-src=''fold-1/unacademy-logo.jpg' alt='Client Logo')                                                   
                   li.quotes
-                    img.lazy(data-src="/assets/education/quotes.png", alt="quotes")
+                    img.lazy(data-src='fold-1/quotes.png' alt='Quote')
         .one-slide
           .testimonial.testi1
             .message
               .testi-img
-                img.lazy(data-src="/assets/education/testi-two.jpg", alt="testimonial-three")
+                img.lazy(data-src='fold-1/testi-two.jpg' alt='Testimonial Image')
               .testi-msg
                 p.msg
                   | Through Payment Pages and Payment Buttons we could start accepting payments just by adding a link to a page or script on the webpage.
                 ul
                   li
-                    h5 Anubha Maneshwar
+                    h5.h5 Anubha Maneshwar
                     p Founder, Girlscript
                   li.testi-logo
-                    img.lazy(data-src="/assets/education/girl-script-logo.jpg", alt="girl-script-logo")
+                    img.Client.Logo(src='fold-1/girl-script-logo.jpg')
                   li.quotes
-                    img.lazy(data-src="/assets/education/quotes.png", alt="Quotes")
+                    img.Quote(src='fold-1/quotes.png')
         .one-slide
           .testimonial.testi1.video
             .message
-             img.lazy(data-src="/assets/education/video-testi.png", alt="video-testimonial")
+              img.VidTesti(src='fold-1/video-testi.png' alt='Testimonial Image')
               .testi-msg
                 ul
                   li
-                    h5 Anubha Maneshwar
+                    h5.h5 Anubha Maneshwar
                     p Founder, Girlscript
                   li.testi-logo
-                    img.lazy(data-src="/assets/education/1.png", alt="education-icone")
+                    img.Client.Logo(src='fold-1/spark-studio.png')
                   li.quotes
-                    img.lazy(data-src="/assets/education/quotes-w.png", alt="quotesw")
+                    img.Quote(src='fold-1/quotes-w.png')
       .controller
-        .control.prev(style="top: 0px; right: 0px")
-          img(src="img.lazy(data-src="/assets/education/arrow.svg", alt="arrow")
-        .control.next(style="top: 0px; left: 20px")
-          img(src="img.lazy(data-src="/assets/education/arrow.svg", alt="arrowone")
+        .control.prev(style='top:0px; right:0px')
+          img.lazy(data-src='fold-1/arrow.svg' alt='Arrow')
+        .control.next(style='top:0px;left:20px;')
+          img.lazy(data-src='fold-1/arrow.svg' alt='Arrow')
   .custom-shape-divider-bottom-1632475645
-    svg( data-name="Layer 1", xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1200 120", preserveaspectratio="none" ) path.shape-fill(d="M1200 120L0 16.48 0 0 1200 0 1200 120z")
-//Testimonial Section End
+    svg(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1200 120' preserveaspectratio='none')
+      path.shape-fill(d='M1200 120L0 16.48 0 0 1200 0 1200 120z')
 //FAQ Section Start
 section#faqSection
     .container
@@ -224,11 +264,7 @@ section#faqSection
               },
               {
                 q: "I want to accept payments without a website, how do I go about it?",
-                a: "You can accept payments through 100+ payment modes via the below products
-
-  				Payment Pages: If you don’t have a website and still would like to showcase information about your product / service with images, links, etc. You can also collect payments on the same page without any coding knowledge.
-
-				Payment Links: If you need to instantly accept payment from customers across different platforms like SMS, Whatsapp etc, you can generate multiple payment links and share them with your students / customers."
+                a: "You can accept payments through 100+ payment modes via the below products Payment Pages: If you don’t have a website and still would like to showcase information about your product / service with images, links, etc. You can also collect payments on the same page without any coding knowledge.Payment Links: If you need to instantly accept payment from customers across different platforms like SMS, Whatsapp etc, you can generate multiple payment links and share them with your students / customers."
               },
               {
                 q: "I have a website, but it is not an ecommerce platform - how can I accept payments?",
@@ -236,13 +272,11 @@ section#faqSection
               },
               {
                 q: "I run / am in charge of fee collection for an institution from hundreds / thousands of students. How can Smart Collect help me?" ,
-                a: "BSmart Collect is a smart alternative to traditional e-collect and virtual account set ups. You can create multiple unique and customised virtual accounts that are unique to every payer. Create an account, share it with your customer who will add it as a beneficiary, and they can continue making payments with the same virtual account in a secure manner. You will receive notifications on every incoming payment
-				To know more, click here"
+                a: "BSmart Collect is a smart alternative to traditional e-collect and virtual account set ups. You can create multiple unique and customised virtual accounts that are unique to every payer. Create an account, share it with your customer who will add it as a beneficiary, and they can continue making payments with the same virtual account in a secure manner. You will receive notifications on every incoming payment To know more, click here"
               },
               {
                 q: "Will I need external help or a web developer to help me get started?" ,
-                a: "If you have a website and are comfortable with a web developer to help you, they can set up our payment gateway solution for you.
-				However, if you don’t have a website, you can still get started with Payment Buttons, Payment Links and Payment Pages with ease - no technical skill required"
+                a: "If you have a website and are comfortable with a web developer to help you, they can set up our payment gateway solution for you. However, if you don’t have a website, you can still get started with Payment Buttons, Payment Links and Payment Pages with ease - no technical skill required"
               },
               {
                 q: "I need to share payment receipts with my students / parents. How can I do that?" ,
@@ -250,13 +284,11 @@ section#faqSection
               },
               {
                 q: "How long will I get the payments in my bank account by?" ,
-                a: "Our typical settlement cycle(time taking for payments to reflect in your bank account) is between 2-5 days.
-				However, our Instant Settlements feature allows you to receive payments instantly upto a certain amount. You can read more here"
+                a: "Our typical settlement cycle(time taking for payments to reflect in your bank account) is between 2-5 days.       However, our Instant Settlements feature allows you to receive payments instantly upto a certain amount. You can read more here"
               },
               {
                 q: "I need to collect fees on a recurring/repetitive basis for my education business. How can I do that with minimal effort?" ,
-                a: "If you are an education institution that needs to collect fees on a monthly, quarterly or even annual basis, you can use Subscriptions. This enables your customer to pay fees on a regular cycle that you can control.
-				You can also use Payment Buttons to collect one time and recurring payments on your website with zero coding in less than 5 mins"
+                a: "If you are an education institution that needs to collect fees on a monthly, quarterly or even annual basis, you can use Subscriptions. This enables your customer to pay fees on a regular cycle that you can control. You can also use Payment Buttons to collect one time and recurring payments on your website with zero coding in less than 5 mins"
               },
               {
                 q: "What kind of documents will I need to upload while signing up?" ,
@@ -271,7 +303,6 @@ section#faqSection
                 p
                   This allows us to complete the verification processes required to activate your account and enable your customers to start transacting. It takes just a few minutes to complete the details, upload the documents so that you can begin your journey of accepting digital payments.
 //FAQ Section End
-//Footer Section Start
 section.endsection
   +endsection-plain-svg('#001E96','#001E96')
   .container
@@ -293,4 +324,4 @@ section.endsection
 append scripts
 script(defer, src='/education.js')
 // Footer Section End
- 
+
